@@ -86,4 +86,7 @@
   <ItemGroup>
     <ResourceCompile Include="Client.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>

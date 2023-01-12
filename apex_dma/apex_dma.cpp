@@ -582,13 +582,13 @@ static void EspLoop()
 						
 						Vector bs = Vector();
 						//Change res to your res here, default is 1080p but can copy paste 1440p here
-						WorldToScreen(EntityPosition, m.matrix, 1920, 1080, bs); //2560, 1440
+						WorldToScreen(EntityPosition, m.matrix, 2560, 1440, bs); //2560, 1440
 						if (esp)
 						{
 							Vector hs = Vector();
 							Vector HeadPosition = Target.getBonePositionByHitbox(0);
 							//Change res to your res here, default is 1080p but can copy paste 1440p here
-							WorldToScreen(HeadPosition, m.matrix, 1920, 1080, hs); //2560, 1440
+							WorldToScreen(HeadPosition, m.matrix, 2560, 1440, hs); //2560, 1440
 							float height = abs(abs(hs.y) - abs(bs.y));
 							float width = height / 2.0f;
 							float boxMiddle = bs.x - (width / 2.0f);
@@ -664,13 +664,13 @@ static void EspLoop()
 
 						Vector bs = Vector();
 						//Change res to your res here, default is 1080p but can copy paste 1440p here
-						WorldToScreen(EntityPosition, m.matrix, 1920, 1080, bs); //2560, 1440
+						WorldToScreen(EntityPosition, m.matrix, 2560, 1440, bs); //2560, 1440
 						if (esp)
 						{
 							Vector hs = Vector();
 							Vector HeadPosition = Target.getBonePositionByHitbox(0);
 							//Change res to your res here, default is 1080p but can copy paste 1440p here
-							WorldToScreen(HeadPosition, m.matrix, 1920, 1080, hs); //2560, 1440
+							WorldToScreen(HeadPosition, m.matrix, 2560, 1440, hs); //2560, 1440
 							float height = abs(abs(hs.y) - abs(bs.y));
 							float width = height / 2.0f;
 							float boxMiddle = bs.x - (width / 2.0f);
@@ -1909,12 +1909,12 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	const char* cl_proc = "MonkeyCure.exe";
+	const char* cl_proc = "Telegram.exe";
 	const char* ap_proc = "R5Apex.exe";
 	//const char* ap_proc = "EasyAntiCheat_launcher.exe";
 
 	//Client "add" offset
-	uint64_t add_off = 0x137a00; //todo make this auto update..
+	uint64_t add_off = 0x4ecc0; //todo make this auto update..
 
 	std::thread aimbot_thr;
 	std::thread esp_thr;
